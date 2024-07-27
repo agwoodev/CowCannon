@@ -6,7 +6,7 @@ public final class CowCannon extends JavaPlugin {
 
     @Override
     public void onEnable() {
-        // Plugin startup logic
+        getServer().getPluginManager().registerEvents(new EntityListener(), this);
 
     }
 
