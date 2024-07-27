@@ -1,0 +1,5 @@
+name: CowCannon
+version: '1.0-SNAPSHOT'
+main: me.agwoo.cowCannon.CowCannon
+api-version: '1.20'
+authors: [ agwoo ]
