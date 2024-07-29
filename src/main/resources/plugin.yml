@@ -3,3 +3,11 @@ version: '1.0-SNAPSHOT'
 main: me.agwoo.cowCannon.CowCannon
 api-version: '1.20'
 authors: [ agwoo ]
+commands:
+  cow:
+    description: "Spawn an exploding cow."
+    usage: "/cow [baby]"
+    aliases:
+      - cowcannon
+    permission: cowcannon.command.cow
+    permission-message: "You don't have the permission to spawn an exploding cow."
