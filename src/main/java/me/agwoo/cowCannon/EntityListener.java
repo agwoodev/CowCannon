@@ -21,6 +21,12 @@ public class EntityListener implements Listener {
         }
 
         if (entity instanceof Cow cow && entity.hasMetadata("CowCannon") && player.getInventory().getItemInMainHand().getType() == Material.BUCKET) {
+            if (!player.hasPermission("cowcannon.cow.use")) {
+                player.sendMessage("You don't have the permission to milk a cow.");
+
+                return;
+            }
+
             cow.getWorld().createExplosion(cow.getLocation(), 2.5F);
         }
     }
